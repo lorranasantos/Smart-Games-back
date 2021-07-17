@@ -1,0 +1,29 @@
+{
+  "name": "smartgame_back",
+  "version": "1.0.0",
+  "description": "Loja de jogos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorranasantos/smart-games-back.git"
+  },
+  "author": "Lorrana Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorranasantos/smart-games-back/issues"
+  },
+  "homepage": "https://github.com/lorranasantos/smart-games-back#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
