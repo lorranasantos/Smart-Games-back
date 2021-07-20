@@ -8,10 +8,6 @@ module.exports = {
         primaryKey: true,
         autoIncrement: true,
       },
-      game_quantity:{
-        type: Sequelize.INTEGER,
-        allowNull:false,
-      },
       game_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -31,6 +27,10 @@ module.exports = {
         },
         onUpdate:"CASCADE",
         onDelete:"CASCADE"
+      },
+      game_quantity:{
+        type: Sequelize.INTEGER,
+        allowNull:false,
       },
     });
   },
