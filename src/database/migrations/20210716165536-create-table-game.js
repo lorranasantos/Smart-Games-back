@@ -24,7 +24,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      
+      discount:{
+        type: Sequelize.INTEGER,
+      }
+
     });
   },
 

@@ -1,4 +1,5 @@
 const {Model, DataTypes} = require ("sequelize");
+const game = require("../controllers/game");
 
 class Game extends Model {
 
@@ -12,6 +13,7 @@ class Game extends Model {
             },
             {
                 sequelize,
+                tableName : "game",
             }
         );
     }

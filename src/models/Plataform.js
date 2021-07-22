@@ -9,6 +9,7 @@ class Plataform extends Model {
             },
             {
                 sequelize,
+                tableName: "plataform",
             }
         );
     }

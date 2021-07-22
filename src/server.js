@@ -1,5 +1,8 @@
 const app = require("./app");
 
 //Porta servidor http
-const port = 3333;
-console.log("Servidor rodando na porta " + port)
+const PORT = 3333;
+
+app.listen(PORT, () =>{
+    console.log(`Servidor rodando na porta ${PORT}`);
+});

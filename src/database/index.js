@@ -5,7 +5,7 @@ const Game = require("../models/Game");
 const Store = require("../models/Store");
 const Plataform = require("../models/Plataform");
 
-const connection = new Sequelize(dbconfig.url, dbconfig.config);
+const connection = new Sequelize(dbconfig);
 
 Game.init(connection);
 Store.init(connection);
