@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    queryInterface.createTable("store", {
+    queryInterface.createTable("stores", {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -12,18 +12,26 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      latitude:{
+      latitude: {
         type: Sequelize.DOUBLE,
-        allowNull:false
+        allowNull: false,
       },
-      longitude:{
+      longitude: {
         type: Sequelize.DOUBLE,
-        allowNull:false
-      }
+        allowNull: false,
+      },
+      createdAt: {
+        type: Sequelize.DATE,
+        allowNull: true,
+      },
+      updatedAt: {
+        type: Sequelize.DATE,
+        allowNull: true,
+      },
     });
   },
 
   down: async (queryInterface, Sequelize) => {
-    queryInterface.dropTable("store");
-  }
+    queryInterface.dropTable("stores");
+  },
 };

@@ -10,17 +10,24 @@ module.exports = {
                     "latitude",
                     "longitude",
                 ],
-                associate:[
-                    {
-                        association:"game_store",
-                        through:{ attributes:[] },
-                        attributes:["id", ""]
-                    },
-                ],
             });
-            res.status(200).send(store);
-        } catch (error) {
-            console.log("falha" + error);
+        res.send(store);
+        }catch (error) {
+            console.log(error);
+            res.status(500).send(error);
+        }
+    },
+    async find(req, res) {
+        const storeId = req.params.id;
+    
+        try {
+            const store = await Store.findByPk(storeId, {
+                attributes: [ "place", "latitude", "longitude"],
+            });
+    
+        res.status(200).send(store);
+        }catch (error) {
+            console.log(error);
             res.status(500).send(error);
         }
     },

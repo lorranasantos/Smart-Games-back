@@ -8,11 +8,14 @@ const routes = express.Router();
 
 //game
 routes.get("/game", gameController.index);
+routes.get("/game/:id", gameController.find);
+routes.put("/game/:id", gameController.update);
 
-// //store
-// routes.get("/store", storeController.index);
+// store
+routes.get("/store", storeController.index);
+routes.get("/store/:id", storeController.find);
 
-// //
-// routes.get("/plataform", plataformController.index);
+// Plataform
+routes.get("/plataform", plataformController.index);
 
 module.exports = routes;

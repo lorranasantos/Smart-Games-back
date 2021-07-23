@@ -1,41 +1,40 @@
-'use strict';
+"use strict";
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-  
-      await queryInterface.bulkInsert('plataform', 
+    await queryInterface.bulkInsert(
+      "plataforms",
       [
         {
-          name: 'PC',
+          name: "PS4",
         },
         {
-          name: 'PS4',
+          name: "PC",
         },
         {
-          name: 'XBoxOne',
+          name: "XBoxOne",
         },
         {
-          name: 'Switch',
+          name: "Switch",
         },
         {
-          name: 'Wiiu',
+          name: "PS2",
         },
         {
-          name: 'PS2',
+          name: "PS3",
         },
         {
-          name: 'XBOX',
+          name: "XBOX",
         },
         {
-          name: 'PS3',
-        }
-    ], {});
-    
+          name: "Wiiu",
+        },
+      ],
+      {}
+    );
   },
 
   down: async (queryInterface, Sequelize) => {
-  
-     await queryInterface.bulkDelete('plataform', null);
-    
-  }
+    await queryInterface.bulkDelete("plataforms", null);
+  },
 };
