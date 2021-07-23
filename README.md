@@ -9,7 +9,6 @@
 * Banco de dados: MySql
 * Express: Framework de construçãp da API
 * ORM: Sequelize
-* Typeorm: ORM para o banco
 * MySQL Workbench 8.0: IDE para o banco de dados
 
 ### Pré-requisitos necessários para rodar o projeto
