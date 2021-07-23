@@ -57,21 +57,11 @@ module.exports = {
 
       game.discount = 20;
 
-      //valor do desconto
       const discountValue = (game.discount * game.price) / 100;
 
-      //valor do jogo é subtatido pelo valor desse desconto (20% do valor total do jogo)
       game.price = game.price - discountValue;
 
-      //isso é tudo pessoal!
-
-      //consome isso só no mobile
-
-      //cria o campo de desconto Double
-
-      //ja volto
-
-      // gameRepositorie.save(game);
+      game.save();
 
       res.status(200).send(game);
     } catch (error) {
