@@ -1,6 +1,6 @@
-# Smart Game - Backend
+# Smart Games - Backend
 
-## Aplicação desenvolvida para a loja Smart Game Ltda.
+## Aplicação desenvolvida para a loja Smart Games Ltda.
 
 ### Linguagens e ferramentas utilizadas
 
